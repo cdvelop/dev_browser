@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"os"
 	"strings"
+
+	"github.com/cdvelop/gotools"
 )
 
 // path: ej: /index.html, / ,/home
@@ -15,27 +17,27 @@ func (b *Browser) captureArguments() {
 
 		switch {
 		case strings.Contains(opt, "path:"):
-			extractArgumentValue(opt, &b.path)
+			gotools.ExtractTwoPointArgument(opt, &b.path)
 			continue
 
 		case strings.Contains(opt, "port:"):
-			extractArgumentValue(opt, &b.port)
+			gotools.ExtractTwoPointArgument(opt, &b.port)
 			continue
 
 		case strings.Contains(opt, "domain:"):
-			extractArgumentValue(opt, &b.domain)
+			gotools.ExtractTwoPointArgument(opt, &b.domain)
 			continue
 
 		case strings.Contains(opt, "with:"):
-			extractArgumentValue(opt, &b.with)
+			gotools.ExtractTwoPointArgument(opt, &b.with)
 			continue
 
 		case strings.Contains(opt, "height:"):
-			extractArgumentValue(opt, &b.height)
+			gotools.ExtractTwoPointArgument(opt, &b.height)
 			continue
 
 		case strings.Contains(opt, "position:"):
-			extractArgumentValue(opt, &b.position)
+			gotools.ExtractTwoPointArgument(opt, &b.position)
 			continue
 
 		case opt == "help" || opt == "?" || opt == "ayuda":
@@ -52,7 +54,7 @@ func (b *Browser) captureArguments() {
 			fmt.Println("height:600")
 			fmt.Println("position:1930,0")
 			fmt.Println("*-position es en caso de que tengas segundo monitor")
-			ShowErrorAndExit("")
+			gotools.ShowErrorAndExit("")
 		}
 
 	}
@@ -73,13 +75,4 @@ func (b *Browser) captureArguments() {
 		b.protocol = "http"
 	}
 
-}
-
-func extractArgumentValue(option string, field *string) {
-	parts := strings.Split(option, ":")
-	if len(parts) >= 2 {
-		*field = parts[1]
-	} else {
-		ShowErrorAndExit("Delimitador ':' no encontrado en la cadena " + option)
-	}
 }
