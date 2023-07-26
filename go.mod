@@ -7,7 +7,7 @@ require github.com/chromedp/chromedp v0.9.1
 require github.com/lxn/win v0.0.0-20210218163916-a377121e959e // indirect
 
 require (
-	github.com/cdvelop/gotools v0.0.17
+	github.com/cdvelop/gotools v0.0.18
 	github.com/chromedp/cdproto v0.0.0-20230220211738-2b1ec77315c9
 	github.com/chromedp/sysutil v1.0.0 // indirect
 	github.com/fstanis/screenresolution v0.0.0-20190527020317-869904d15333

@@ -1,5 +1,5 @@
-github.com/cdvelop/gotools v0.0.17 h1:hMCDx+mv9Wjgm86jCmX2gGVp+L4OgBS1ssipEG+2T2M=
-github.com/cdvelop/gotools v0.0.17/go.mod h1:3c5/VV8f0ZJBPAGm5IC1bFavV8bSFLBNjkJOAl3k190=
+github.com/cdvelop/gotools v0.0.18 h1:8a2VaklLnxdkE0Sf/8bKp85M6HTMzlpyCblLF0lTvEU=
+github.com/cdvelop/gotools v0.0.18/go.mod h1:3c5/VV8f0ZJBPAGm5IC1bFavV8bSFLBNjkJOAl3k190=
 github.com/cdvelop/model v0.0.34 h1:pwJsUqcAh+70PedzD8+cTWnCmhjFsE4W5RqSJwG/KsM=
 github.com/chromedp/cdproto v0.0.0-20230220211738-2b1ec77315c9 h1:wMSvdj3BswqfQOXp2R1bJOAE7xIQLt2dlMQDMf836VY=
 github.com/chromedp/cdproto v0.0.0-20230220211738-2b1ec77315c9/go.mod h1:GKljq0VrfU4D5yc+2qA6OVr8pmO/MBbPEWqWQ/oqGEs=
