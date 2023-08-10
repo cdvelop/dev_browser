@@ -1,16 +1,17 @@
 package dev_browser
 
 import (
-	"log"
+	"fmt"
 
 	"github.com/chromedp/chromedp"
 )
 
-func (b *Browser) Reload() {
+func (b *Browser) Reload() error {
 	// fmt.Println("Recargando Navegador")
 	err := chromedp.Run(b.Context, chromedp.Reload())
 	if err != nil {
-		log.Println("Error al recargar Pagina ", err)
+		return fmt.Errorf("error al recargar Pagina %v", err)
 	}
 
+	return nil
 }
