@@ -4,7 +4,7 @@ import (
 	"context"
 	"strconv"
 
-	"github.com/cdvelop/gotools"
+	. "github.com/cdvelop/output"
 	"github.com/chromedp/chromedp"
 )
 
@@ -13,20 +13,20 @@ func (b *Browser) CreateBrowserContext() {
 
 	width, height, err := GetScreenSize()
 	if err != nil {
-		gotools.ShowErrorAndExit(err.Error())
+		ShowErrorAndExit(err.Error())
 	}
 
 	if b.with != "" {
 		width, err = strconv.Atoi(b.with)
 		if err != nil {
-			gotools.ShowErrorAndExit(err.Error())
+			ShowErrorAndExit(err.Error())
 		}
 	}
 
 	if b.height != "" {
 		height, err = strconv.Atoi(b.height)
 		if err != nil {
-			gotools.ShowErrorAndExit(err.Error())
+			ShowErrorAndExit(err.Error())
 		}
 	}
 

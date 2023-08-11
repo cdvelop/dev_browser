@@ -6,6 +6,7 @@ import (
 	"strings"
 
 	"github.com/cdvelop/gotools"
+	. "github.com/cdvelop/output"
 )
 
 // path: ej: /index.html, / ,/home
@@ -54,7 +55,7 @@ func (b *Browser) captureArguments() {
 			fmt.Println("height:600")
 			fmt.Println("position:1930,0")
 			fmt.Println("*-position es en caso de que tengas segundo monitor")
-			gotools.ShowErrorAndExit("")
+			ShowErrorAndExit("")
 		}
 
 	}
