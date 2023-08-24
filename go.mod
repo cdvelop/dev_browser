@@ -7,7 +7,7 @@ require github.com/chromedp/chromedp v0.9.2
 require github.com/lxn/win v0.0.0-20210218163916-a377121e959e // indirect
 
 require (
-	github.com/cdvelop/gotools v0.0.26
+	github.com/cdvelop/gotools v0.0.30
 	github.com/cdvelop/output v0.0.2
 	github.com/chromedp/cdproto v0.0.0-20230808232040-5d0fb3432de3
 	github.com/chromedp/sysutil v1.0.0 // indirect

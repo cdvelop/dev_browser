@@ -1,6 +1,6 @@
-github.com/cdvelop/gotools v0.0.26 h1:OFU9PCtkn0jgFi7Cj0tWYYsvosTKLq9qLAgZGhOCWcA=
-github.com/cdvelop/gotools v0.0.26/go.mod h1:ongDeo65K1NCsus8LSNeJKcnaPGatxPpN++o3HYGOJ4=
-github.com/cdvelop/model v0.0.36 h1:63jcHk69YgTBYdZgcuzzofzoT1tIfo/M2E/iiRManfQ=
+github.com/cdvelop/gotools v0.0.30 h1:ddsIcAdepPST1MwY94/A55X864ALDH8xZhqNyDW+OZw=
+github.com/cdvelop/gotools v0.0.30/go.mod h1:wO5sBUePcIVJ5AWMbQrGRG237aHEDSRqd1R+rJnFYt4=
+github.com/cdvelop/model v0.0.39 h1:ddGGnPyLCW47mvFdATojRww5H+4dvjjqiFP3i9U9lMM=
 github.com/chromedp/cdproto v0.0.0-20230802225258-3cf4e6d46a89/go.mod h1:GKljq0VrfU4D5yc+2qA6OVr8pmO/MBbPEWqWQ/oqGEs=
 github.com/chromedp/cdproto v0.0.0-20230808232040-5d0fb3432de3 h1:Qhw280TMvghvzNauTPMwEvaHUYWRJSoSlNVMev4lO7M=
 github.com/chromedp/cdproto v0.0.0-20230808232040-5d0fb3432de3/go.mod h1:GKljq0VrfU4D5yc+2qA6OVr8pmO/MBbPEWqWQ/oqGEs=
