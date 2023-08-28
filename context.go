@@ -62,6 +62,8 @@ func (b *Browser) CreateBrowserContext() {
 		// chromedp.Flag("enable-automation", true),
 		// chromedp.Flag("disable-infobars", true),
 		// chromedp.Flag("exclude-switches", "disable-infobars"),
+
+		chromedp.Flag("disable-blink-features", "WebFontsInterventionV2"), //remove warning font in console [Intervention] Slow network is detected.
 	)
 
 	parentCtx, _ := chromedp.NewExecAllocator(context.Background(), opts...)
