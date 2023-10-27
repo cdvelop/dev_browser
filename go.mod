@@ -6,7 +6,7 @@ require github.com/chromedp/chromedp v0.9.2
 
 require (
 	github.com/cdvelop/input v0.0.26 // indirect
-	github.com/cdvelop/model v0.0.60 // indirect
+	github.com/cdvelop/model v0.0.61 // indirect
 	github.com/lxn/win v0.0.0-20210218163916-a377121e959e // indirect
 	golang.org/x/text v0.12.0 // indirect
 )
