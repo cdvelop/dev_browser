@@ -2,8 +2,8 @@ github.com/cdvelop/gotools v0.0.43 h1:6HEppsMtvWUINqvyv371wXli2bJAYXotG8GeiW5i8P
 github.com/cdvelop/gotools v0.0.43/go.mod h1:MXj0A4f21pQX1bG+TcoNm6GSklYIi/2Az1O/CdzjAS8=
 github.com/cdvelop/input v0.0.26 h1:ASr1Cj+JkEj0H8CUIsYhGzmXW2TMdagSjO+nSdnbzuM=
 github.com/cdvelop/input v0.0.26/go.mod h1:Y8aRwaFsEZy7Yo75+w0iFBdjj1sCPmC7uFe7iouc7ww=
-github.com/cdvelop/model v0.0.62 h1:u2/xktzVnnTzPUZOxqvenyvnKxmKwOwiIk258BIvXOk=
-github.com/cdvelop/model v0.0.62/go.mod h1:cYJNxbv1WV/aDgiVPV9VXs8LrbF8+0nU+X+KfSevyzw=
+github.com/cdvelop/model v0.0.63 h1:gYTioCiHUXQgg4sM5WePTpRNy/za6DA3YqDOZoL7AmQ=
+github.com/cdvelop/model v0.0.63/go.mod h1:cYJNxbv1WV/aDgiVPV9VXs8LrbF8+0nU+X+KfSevyzw=
 github.com/chromedp/cdproto v0.0.0-20230802225258-3cf4e6d46a89/go.mod h1:GKljq0VrfU4D5yc+2qA6OVr8pmO/MBbPEWqWQ/oqGEs=
 github.com/chromedp/cdproto v0.0.0-20230808232040-5d0fb3432de3 h1:Qhw280TMvghvzNauTPMwEvaHUYWRJSoSlNVMev4lO7M=
 github.com/chromedp/cdproto v0.0.0-20230808232040-5d0fb3432de3/go.mod h1:GKljq0VrfU4D5yc+2qA6OVr8pmO/MBbPEWqWQ/oqGEs=
