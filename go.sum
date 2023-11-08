@@ -2,8 +2,8 @@ github.com/cdvelop/gotools v0.0.53 h1:m5QkmP1ZXUMxNkOFdb+RJXWUwyLl9D9BZhBq6Nnxvx
 github.com/cdvelop/gotools v0.0.53/go.mod h1:ufOD22h89Zpij8oVWVWP997E5rNH7v1xhjF9bs1sFyU=
 github.com/cdvelop/input v0.0.48 h1:PJt0y0eaEwGavu+0nlLDBbcaeBDnm/Gpl/r2rG7ul1M=
 github.com/cdvelop/input v0.0.48/go.mod h1:XMIcclkxZ1gyGf4mhNqUen/CKc4w3elDt45FbRtbhE4=
-github.com/cdvelop/model v0.0.65 h1:V1SjyPz1K6xLd3jnrV/mrYJLBA1Zqtps66fDWm8vQXg=
-github.com/cdvelop/model v0.0.65/go.mod h1:cYJNxbv1WV/aDgiVPV9VXs8LrbF8+0nU+X+KfSevyzw=
+github.com/cdvelop/model v0.0.66 h1:gSQpYAByeFaGoaIGkQ1/0SjthtI98/MHPziwojEZZW4=
+github.com/cdvelop/model v0.0.66/go.mod h1:cYJNxbv1WV/aDgiVPV9VXs8LrbF8+0nU+X+KfSevyzw=
 github.com/cdvelop/timetools v0.0.14 h1:GvIIcFOh5rsahcivDvEPvq3CSodk+LOLGoH9iasbO9E=
 github.com/cdvelop/timetools v0.0.14/go.mod h1:14lsaVSAdJx5vT8M2jyoFlYqLZ87stW65OVYFM0kFBA=
 github.com/chromedp/cdproto v0.0.0-20231011050154-1d073bb38998/go.mod h1:GKljq0VrfU4D5yc+2qA6OVr8pmO/MBbPEWqWQ/oqGEs=
