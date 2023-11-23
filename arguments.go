@@ -3,10 +3,9 @@ package dev_browser
 import (
 	"fmt"
 	"os"
-	"strings"
 
-	"github.com/cdvelop/gotools"
 	. "github.com/cdvelop/output"
+	"github.com/cdvelop/strings"
 )
 
 // path: ej: /index.html, / ,/home
@@ -17,28 +16,28 @@ func (b *Browser) captureArguments() {
 	for _, opt := range os.Args {
 
 		switch {
-		case strings.Contains(opt, "path:"):
-			gotools.ExtractTwoPointArgument(opt, &b.path)
+		case strings.Contains(opt, "path:") == 1:
+			strings.ExtractTwoPointArgument(opt, &b.path)
 			continue
 
-		case strings.Contains(opt, "port:"):
-			gotools.ExtractTwoPointArgument(opt, &b.port)
+		case strings.Contains(opt, "port:") == 1:
+			strings.ExtractTwoPointArgument(opt, &b.port)
 			continue
 
-		case strings.Contains(opt, "domain:"):
-			gotools.ExtractTwoPointArgument(opt, &b.domain)
+		case strings.Contains(opt, "domain:") == 1:
+			strings.ExtractTwoPointArgument(opt, &b.domain)
 			continue
 
-		case strings.Contains(opt, "with:"):
-			gotools.ExtractTwoPointArgument(opt, &b.with)
+		case strings.Contains(opt, "with:") == 1:
+			strings.ExtractTwoPointArgument(opt, &b.with)
 			continue
 
-		case strings.Contains(opt, "height:"):
-			gotools.ExtractTwoPointArgument(opt, &b.height)
+		case strings.Contains(opt, "height:") == 1:
+			strings.ExtractTwoPointArgument(opt, &b.height)
 			continue
 
-		case strings.Contains(opt, "position:"):
-			gotools.ExtractTwoPointArgument(opt, &b.position)
+		case strings.Contains(opt, "position:") == 1:
+			strings.ExtractTwoPointArgument(opt, &b.position)
 			continue
 
 		case opt == "help" || opt == "?" || opt == "ayuda":
