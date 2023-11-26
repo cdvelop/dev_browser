@@ -20,13 +20,15 @@ func (b *Browser) DevBrowserSTART(wg *sync.WaitGroup) {
 
 	url := fmt.Sprintf("%v://%v:%v%v", b.protocol, b.domain, b.port, b.path)
 
-	err := chromedp.Run(b.Context, chromedp.Navigate(url))
+	err := chromedp.Run(b.Context, b.sendkeys(url)) // chromedp.Navigate(url),
+
 	if err != nil {
 		log.Fatal("Error al navegar "+b.path+" ", err)
 	}
 
 	// Espera hasta que la página esté completamente cargada
 	var loaded bool
+
 	err = chromedp.Run(b.Context, chromedp.ActionFunc(func(ctx context.Context) error {
 		for {
 			select {
@@ -38,8 +40,10 @@ func (b *Browser) DevBrowserSTART(wg *sync.WaitGroup) {
 				if err != nil {
 					return err
 				}
+
 				if readyState == "complete" {
 					loaded = true
+
 					return nil
 				}
 			}
@@ -54,4 +58,11 @@ func (b *Browser) DevBrowserSTART(wg *sync.WaitGroup) {
 		log.Fatal("La página no se ha cargado correctamente")
 	}
 
+}
+
+func (b Browser) sendkeys(host string) chromedp.Tasks {
+
+	return chromedp.Tasks{
+		chromedp.Navigate(host),
+	}
 }

@@ -14,4 +14,6 @@ type Browser struct {
 
 	context.Context
 	context.CancelFunc
+
+	dev_mode bool
 }

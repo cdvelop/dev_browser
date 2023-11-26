@@ -16,6 +16,10 @@ func (b *Browser) captureArguments() {
 	for _, opt := range os.Args {
 
 		switch {
+
+		case opt == "dev":
+			b.dev_mode = true
+
 		case strings.Contains(opt, "path:") == 1:
 			strings.ExtractTwoPointArgument(opt, &b.path)
 			continue

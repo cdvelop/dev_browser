@@ -45,7 +45,7 @@ func (b *Browser) CreateBrowserContext() {
 
 		// chromedp.NoFirstRun,
 		// chromedp.NoDefaultBrowserCheck,
-		chromedp.Flag("auto-open-devtools-for-tabs", true),
+
 		//quitar mensaje: Chrome is being controlled by automated test software
 
 		// chromedp.Flag("--webview-log-js-console-messages", true),
@@ -64,6 +64,7 @@ func (b *Browser) CreateBrowserContext() {
 		// chromedp.Flag("exclude-switches", "disable-infobars"),
 
 		chromedp.Flag("disable-blink-features", "WebFontsInterventionV2"), //remove warning font in console [Intervention] Slow network is detected.
+		chromedp.Flag("auto-open-devtools-for-tabs", true),
 	)
 
 	parentCtx, _ := chromedp.NewExecAllocator(context.Background(), opts...)
