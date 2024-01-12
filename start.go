@@ -4,6 +4,8 @@ import (
 	"context"
 	"fmt"
 	"log"
+	"os"
+	"strings"
 	"sync"
 
 	"github.com/chromedp/chromedp"
@@ -15,10 +17,20 @@ func (b *Browser) DevBrowserSTART(wg *sync.WaitGroup) {
 
 	b.CreateBrowserContext()
 	// defer cancel()
+	var protocol = "http"
+
+	port := os.Getenv("APP_PORT")
+	if port == "" {
+		port = "8080"
+	} else {
+		if strings.Contains(port, "44") {
+			protocol = "https"
+		}
+	}
 
 	// Navega a una página web
 
-	url := fmt.Sprintf("%v://%v:%v%v", b.protocol, b.domain, b.port, b.path)
+	url := protocol + `://localhost:` + port + b.path
 
 	err := chromedp.Run(b.Context, b.sendkeys(url)) // chromedp.Navigate(url),
 

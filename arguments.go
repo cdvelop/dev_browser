@@ -9,8 +9,7 @@ import (
 )
 
 // path: ej: /index.html, / ,/home
-// port: ej: 9090
-// domain ej: 192.0.0.5,app.com default localhost
+
 func (b *Browser) captureArguments() {
 
 	for _, opt := range os.Args {
@@ -22,14 +21,6 @@ func (b *Browser) captureArguments() {
 
 		case strings.Contains(opt, "path:") == 1:
 			strings.ExtractTwoPointArgument(opt, &b.path)
-			continue
-
-		case strings.Contains(opt, "port:") == 1:
-			strings.ExtractTwoPointArgument(opt, &b.port)
-			continue
-
-		case strings.Contains(opt, "domain:") == 1:
-			strings.ExtractTwoPointArgument(opt, &b.domain)
 			continue
 
 		case strings.Contains(opt, "with:") == 1:
@@ -46,18 +37,26 @@ func (b *Browser) captureArguments() {
 
 		case opt == "help" || opt == "?" || opt == "ayuda":
 
-			fmt.Println("default: port:8080 path:/")
-			fmt.Println("*** ej valores admitidos***")
-			fmt.Println("protocol:https default http")
-			fmt.Println("domain:/192.168.0.2 default localhost")
-			fmt.Println("port:9090 default 8080")
-			fmt.Println("path:/login,/home default /")
-			fmt.Println("-----------------------")
-			fmt.Println("--- Browser Options ---")
-			fmt.Println("with:800")
-			fmt.Println("height:600")
-			fmt.Println("position:1930,0")
-			fmt.Println("*-position es en caso de que tengas segundo monitor")
+			fmt.Println(`
+			
+			- default: port:8080  or get env var = "APP_PORT"
+
+			- protocol default http 
+			    if port contain number 44 protocol is https.
+
+			--- arguments path:
+
+			    path:/login, /home default /
+			
+			--- arguments Browser ---
+
+			with:800
+			height:600
+			position:1930,0
+			*-position if you have second monitor
+			
+			`)
+
 			ShowErrorAndExit("")
 		}
 
@@ -65,18 +64,6 @@ func (b *Browser) captureArguments() {
 
 	if b.path == "" {
 		b.path = "/"
-	}
-
-	if b.port == "" {
-		b.port = "8080"
-	}
-
-	if b.domain == "" {
-		b.domain = "localhost"
-	}
-
-	if b.protocol == "" {
-		b.protocol = "http"
 	}
 
 }

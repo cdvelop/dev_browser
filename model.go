@@ -3,10 +3,7 @@ package dev_browser
 import "context"
 
 type Browser struct {
-	path     string // ej /index.html, /
-	port     string //8080
-	domain   string // localhost
-	protocol string // ej https,
+	path string // ej /index.html, /
 
 	with     string //browser option
 	height   string //browser option
