@@ -4,9 +4,9 @@ go 1.20
 
 require (
 	github.com/cdvelop/output v0.0.16
-	github.com/cdvelop/strings v0.0.9
-	github.com/chromedp/cdproto v0.0.0-20240102194822-c006b26f21c7
-	github.com/chromedp/chromedp v0.9.3
+	github.com/cdvelop/strings v0.0.11
+	github.com/chromedp/cdproto v0.0.0-20240226204813-532e667d868f
+	github.com/chromedp/chromedp v0.9.5
 	github.com/fstanis/screenresolution v0.0.0-20190527020317-869904d15333
 )
 
@@ -18,5 +18,5 @@ require (
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/lxn/win v0.0.0-20210218163916-a377121e959e // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
-	golang.org/x/sys v0.16.0 // indirect
+	golang.org/x/sys v0.17.0 // indirect
 )
